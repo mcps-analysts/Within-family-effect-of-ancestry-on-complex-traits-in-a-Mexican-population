@@ -3,9 +3,9 @@
 This repository provides a complete pipeline for analyzing genetype data and phenotype data, focusing on ancestry effects.
 
 ---
-################################
+
 ## 📦 Contents
-################################
+
 
 ### 1.0. **Standardize Continuous Traits and Exclude Outliers (R)**
 
@@ -36,14 +36,14 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 - Combines within- and between-family effects to predict marginal ancestry effects
 - Estimates expected effect size and standard error
 
-################################
+
 ## 🛠 Software 
-################################
+
 - **R **
 - **Shell tools**: [`snipar`](https://github.com/AlexTISYoung/snipar), [`GCTA`](https://cnsgenomics.com/software/gcta/)
 
-################################
+
 ## ✉️ Contact
-################################
+
 
 siqi.wang@ndph.ox.ac.uk
