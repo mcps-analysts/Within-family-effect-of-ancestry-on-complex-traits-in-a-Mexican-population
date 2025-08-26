@@ -1,6 +1,3 @@
-# Direct-effect-of-genetic-ancestry-on-complex-traits
-Direct effect of genetic ancestry on complex traits in a Mexican population
-
 # Direct effect of genetic ancestry on complex traits in a Mexican population
 
 This repository provides a complete pipeline for analyzing genetype data and phenotype data, focusing on ancestry effects.
