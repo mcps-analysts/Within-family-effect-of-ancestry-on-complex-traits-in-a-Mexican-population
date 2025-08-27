@@ -29,7 +29,7 @@ df_all <- rbind(df1, df2) %>%
 
 # --------------------------------------------------------------------------------------------------
 #  Binning by Frequency of Trait-Increasing Alleles (fTIA) and LD Score
-#  fTIA and LD Score are calculated from the same ancestry population
+#  fTIA and LD Score are calculated from the same ancestry (ANC2) population
 # --------------------------------------------------------------------------------------------------
 df_all <- df_all %>%
   mutate(EAF_bin = ntile(fTIA_ANC2, 20)) %>%
@@ -144,3 +144,4 @@ p_norm_diff <- 2 * pnorm(-abs(z_diff))
 
 # End of Script
 #####################################################################################################
+
