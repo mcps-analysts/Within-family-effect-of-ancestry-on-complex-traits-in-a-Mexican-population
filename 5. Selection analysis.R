@@ -36,7 +36,6 @@ df_all <- rbind(df1, df2) %>%
 #  - In our study, ANC2 corresponded to EUR ancestry, and allele frequencies were calculated 
 #    using an independent set of UK Biobank individuals (n=348,658) with available genotype data. 
 # --------------------------------------------------------------------------------------------------
-
 df_all <- df_all %>%
   mutate(EAF_bin = ntile(fTIA_ANC2, 20)) %>%
   group_by(EAF_bin) %>%
@@ -150,3 +149,4 @@ p_norm_diff <- 2 * pnorm(-abs(z_diff))
 
 # End of Script
 #####################################################################################################
+
