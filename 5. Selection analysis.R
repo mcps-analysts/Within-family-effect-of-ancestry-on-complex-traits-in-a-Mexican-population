@@ -33,8 +33,8 @@ df_all <- rbind(df1, df2) %>%
 #
 #  - LD scores were calculated using the 1000 Genomes reference panel before the selection analysis.
 #  - Both fTIA and LD scores are derived from the same ancestry population (ANC2).
-#  - If ANC2 corresponds to EUR, allele frequencies can also be calculated using
-#    an independent set of UK Biobank individuals with available genotype data.
+#  - In our study, ANC2 corresponded to EUR ancestry, and allele frequencies were calculated 
+#    using an independent set of UK Biobank individuals (n=348,658) with available genotype data. 
 # --------------------------------------------------------------------------------------------------
 
 df_all <- df_all %>%
