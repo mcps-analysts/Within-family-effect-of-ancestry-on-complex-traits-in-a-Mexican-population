@@ -27,10 +27,16 @@ df_all <- rbind(df1, df2) %>%
   rename(fTIA_ANC2 = ANC2_freq_risk_allele,
          fTIA_ANC1 = ANC1_freq_risk_allele)
 
+
 # --------------------------------------------------------------------------------------------------
 #  Binning by Frequency of Trait-Increasing Alleles (fTIA) and LD Score
-#  fTIA and LD Score are calculated from the same ancestry (ANC2) population
+#
+#  - LD scores were calculated using the 1000 Genomes reference panel before the selection analysis.
+#  - Both fTIA and LD scores are derived from the same ancestry population (ANC2).
+#  - If ANC2 corresponds to EUR, allele frequencies can also be calculated using
+#    an independent set of UK Biobank individuals with available genotype data.
 # --------------------------------------------------------------------------------------------------
+
 df_all <- df_all %>%
   mutate(EAF_bin = ntile(fTIA_ANC2, 20)) %>%
   group_by(EAF_bin) %>%
@@ -144,4 +150,3 @@ p_norm_diff <- 2 * pnorm(-abs(z_diff))
 
 # End of Script
 #####################################################################################################
-
