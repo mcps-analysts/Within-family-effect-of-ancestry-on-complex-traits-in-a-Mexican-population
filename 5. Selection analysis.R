@@ -3,7 +3,7 @@
 #####################################################################################################
 
 # --------------------------------------------------------------------------------------------------
-# 1. Load Packages and Setup
+#  Load Packages and Setup
 # --------------------------------------------------------------------------------------------------
 library(dplyr)
 library(purrr)
@@ -15,7 +15,7 @@ library(data.table)
 plan(multisession, workers = 8)  # Parallel processing setup
 
 # --------------------------------------------------------------------------------------------------
-# 2. Load Input Data (Update file paths accordingly)
+#  Load Input Data (Update file paths accordingly)
 # --------------------------------------------------------------------------------------------------
 df1 <- read.csv("Trait_A_target_snps.csv")     # target SNPs
 df2 <- read.csv("Trait_A_background_snps.csv") # background SNPs
@@ -28,7 +28,8 @@ df_all <- rbind(df1, df2) %>%
          fTIA_ANC1 = ANC1_freq_risk_allele)
 
 # --------------------------------------------------------------------------------------------------
-# 3. Binning by Allele Frequency (EAF) and LD Score
+#  Binning by Frequency of Trait-Increasing Alleles (fTIA) and LD Score
+#  fTIA and LD Score are calculated from the same ancestry population
 # --------------------------------------------------------------------------------------------------
 df_all <- df_all %>%
   mutate(EAF_bin = ntile(fTIA_ANC2, 20)) %>%
@@ -46,7 +47,7 @@ background_by_bin <- split(background_snps, background_snps$bin_id)
 background_by_bin <- lapply(background_by_bin, as.data.table)
 
 # --------------------------------------------------------------------------------------------------
-# 4. Core Functions
+#  Core Functions
 # --------------------------------------------------------------------------------------------------
 # Match a background SNP from same bin
 get_matched_snp_fast <- function(bin_id, snp_name, seed_val = NULL) {
@@ -92,7 +93,7 @@ compute_fst <- function(p1, p2, n1, n2) {
 }
 
 # --------------------------------------------------------------------------------------------------
-# 5. Run Permutations
+#  Run Permutations
 # --------------------------------------------------------------------------------------------------
 n_perm <- 10000
 all_matched_snps <- generate_permuted_snps(n_perm, assoc_snps)
@@ -101,7 +102,7 @@ all_matched_snps <- all_matched_snps %>% select("sample_id", "ori_asso_SNP", "ma
 saveRDS(all_matched_snps, file = "matched_snps_all_samples.rds")
 
 # --------------------------------------------------------------------------------------------------
-# 6. Fst and Allele Frequency Difference Analysis
+#  Fst and Allele Frequency Difference Analysis
 # --------------------------------------------------------------------------------------------------
 ##################################
 # Fst #
