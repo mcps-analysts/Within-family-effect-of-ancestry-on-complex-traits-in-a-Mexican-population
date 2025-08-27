@@ -104,9 +104,9 @@ saveRDS(all_matched_snps, file = "matched_snps_all_samples.rds")
 # --------------------------------------------------------------------------------------------------
 #  Fst and Allele Frequency Difference Analysis
 # --------------------------------------------------------------------------------------------------
-##################################
+###########
 # Fst #
-##################################
+###########
 n1 <- 1000    # Update n1 accordingly
 n2 <- 300000  # Update n2 accordingly
 
@@ -125,9 +125,9 @@ null_sd_fst <- sd(perm_mean_fsts$mean_fst)
 z_fst <- (obs_mean_fst - null_mean_fst) / null_sd_fst
 p_norm_fst <- 2 * pnorm(-abs(z_fst))
 
-##################################
-# Allele Frequency Difference #
-##################################
+###############################
+# Allele Frequency Difference
+###############################
 assoc_snps$freq_diff <- assoc_snps$fTIA_ANC1 - assoc_snps$fTIA_ANC2
 all_matched_snps$freq_diff <- all_matched_snps$fTIA_ANC1 - all_matched_snps$fTIA_ANC2
 
