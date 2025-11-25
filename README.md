@@ -35,6 +35,10 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 - Combines within- and between-family effects to predict marginal ancestry effects
 - Estimates expected effect size and standard error
 
+### 7. **Power calculation (R)**
+- Computes statistical power for detecting a between-ancestry effect
+- based on the number of sibling pairs, within-family ancestry variation, and the sibling phenotypic correlation
+
 
 ## 🛠 Software 
 
