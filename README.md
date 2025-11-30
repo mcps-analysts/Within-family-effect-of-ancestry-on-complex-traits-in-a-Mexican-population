@@ -24,7 +24,7 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 
 ### ✔️ 1.0 Standardizing Continuous Traits
 - Split data by sex  
-- Adjust traits for **Age** and **Age²**  
+- Adjust traits for **age** and **age²**  
 - Standardize residuals (mean = 0, SD = 1)  
 - Remove outliers (±5 SD)  
 - Merge processed sex-specific datasets  
