@@ -39,7 +39,7 @@ lambda <- var_resid / var_fam
 c_factor <- (n + lambda) / (n * (1 + lambda))
 
 # ------------------------------------------------------------------------------
-#  Estimated Effects from  Family-Based analysis (replace with actual values)
+#  Estimated Effects from Family-Based analysis (replace with actual values)
 # -------------------------------------------------------------------------------
 beta_within <- actual_values   
 beta_between <- actual_values  
@@ -59,4 +59,5 @@ cov_bw <- actual_values_covariance_between_within_and_between
 SE_expected_beta <- sqrt(se_within^2 + c_factor^2 * se_between^2 + 2 * c_factor * cov_bw)
 
 ################################################################################
+
 
