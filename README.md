@@ -69,7 +69,7 @@ Using **snipar**
 Using **GCTA**  
 🔗 https://github.com/JianYang-Lab/GCTA
 
-Performs REML analysis:
+Perform REML analysis:
 - Multiple GRMs (`mgrm.txt`)  
 - Phenotype + covariate files  
 
@@ -77,7 +77,7 @@ Performs REML analysis:
 
 ## 4. 📈 Partial Correlation (R)
 
-Computes partial correlations:
+Compute partial correlations:
 - Select variables (e.g., `v1`, `v2`, `v3`, `v4`)  
 - Use `pcor()` from **ppcor**  
 
