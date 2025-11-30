@@ -134,7 +134,7 @@ Inputs:
 ---
 # 📜 Citation
 
-If you use this pipeline, please cite our manuscript.
+If you use this pipeline, please cite our paper.
 
 ---
 # ✉️ Contact
