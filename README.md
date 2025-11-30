@@ -32,7 +32,7 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 
 ---
 
-### ✔️ 1.1 Independent Population Analysis (R)
+### ✔️ 1.1. Analysis within independent population (R)
 This section performs association analyses within the independent subset of the data
 
 **Trait A (Continuous)**  
@@ -44,8 +44,8 @@ This section performs association analyses within the independent subset of the 
 
 ---
 
-### ✔️ 1.2 Analysis of Binary Trait within Family Data
-Using Mixed model logistic regression — R Code
+### ✔️ 1.2 Analysis of Binary Trait within Family Data (R)
+Using Mixed model logistic regression
 
 - Using family data 
 - Random intercept for family 
