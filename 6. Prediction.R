@@ -2,7 +2,7 @@
 ## 6. Prediction of Ancestry Effect
 ## 
 ## This script calculates the expected marginal beta for a phenotype
-## using within-family (direct) and between-family (indirect) effects.
+## using within-family and between-family effects.
 ################################################################################
 # ------------------------------------------------------------------------------
 #  Load Required Libraries
@@ -59,3 +59,4 @@ cov_bw <- actual_values_covariance_between_within_and_between
 SE_expected_beta <- sqrt(se_within^2 + c_factor^2 * se_between^2 + 2 * c_factor * cov_bw)
 
 ################################################################################
+
