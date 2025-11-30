@@ -115,7 +115,7 @@ using within-family and between-family effects.
 
 ## 7. 🧪 Statistical Power Calculation (R)
 
-Computes statistical power for detecting a within-family ancestry effect
+Compute the statistical power to detect a within-family ancestry effect
 
 Inputs:
 - Number of sibling pairs  
