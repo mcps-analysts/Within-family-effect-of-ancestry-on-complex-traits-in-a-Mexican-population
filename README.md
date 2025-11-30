@@ -9,14 +9,15 @@ It includes phenotype processing, association tests, IBD inference, REML modelin
 # 📁 Repository Structure
 
 ```
-📦 ancestry-effect-pipeline
-├── 1_phenotype_processing/
-├── 2_ibd_estimation/
-├── 3_reml_analysis/
-├── 4_partial_correlation/
-├── 5_selection_analysis/
-├── 6_prediction_of_ancestry_effect/
-├── 7_power_calculation/
+├── 1.0. **Standardize Continuous Traits and Exclude Outliers (R)**/
+├── 1.1. **Independent Population Analysis (R)**/
+├── 1.2. **Family-Based Mixed Models (R)**/
+├── 2. **IBD Estimation (Shell)**/
+├── 3. **REML Analysis (Shell)**/
+├── 4. **Partial Correlation (R)**/
+├── 5. **Selection Analysis (R)**/
+├── 6. **Prediction of Ancestry Effect (R)**/
+├── 7. **Statistical Power calculation (R)**/
 ```
 
 ---
