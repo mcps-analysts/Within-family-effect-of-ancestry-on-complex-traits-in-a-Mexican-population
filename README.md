@@ -153,19 +153,6 @@ This repository provides a full genetics workflow including:
 
 Together, these tools help characterize ancestry effects in complex traits using robust statistical genetics methods.
 
----
-
-# 📜 Citation
-
-If you use this pipeline, please cite the corresponding manuscript (add once available).
-
----
-
-# 📬 Contact
-
-For questions or contributions, please open an issue or submit a pull request.
-
-
 
 ################################
 ## 🛠 Software 
@@ -173,7 +160,15 @@ For questions or contributions, please open an issue or submit a pull request.
 - **R **
 - **Shell tools**: [`snipar`](https://github.com/AlexTISYoung/snipar), [`GCTA`](https://cnsgenomics.com/software/gcta/)
 
+---
+
+# 📜 Citation
+
+If you use this pipeline, please cite the corresponding manuscript (add once available).
+
+
 ################################
 ## ✉️ Contact
 ################################
 siqi.wang@ndph.ox.ac.uk
+
