@@ -9,9 +9,7 @@ It includes phenotype processing, association tests, IBD inference, REML modelin
 # 📁 Repository Structure
 
 ```
-├── 1.0. Standardize Continuous Traits and Exclude Outliers (R)
-├── 1.1. Independent Population Analysis (R)
-├── 1.2. Family-Based Mixed Models (R)
+├── 1. Phenotype Processing & Association Analysis (R)
 ├── 2. IBD Estimation (Shell)
 ├── 3. REML Analysis (Shell)
 ├── 4. Partial Correlation (R)
