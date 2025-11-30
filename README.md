@@ -6,17 +6,16 @@ It includes phenotype processing, association tests, IBD inference, REML modelin
 
 ---
 
-# 📁 Repository Structure
+# 🧩 Repository Structure
 
-```
-├── 1. Phenotype Processing & Association Analysis (R)
-├── 2. IBD Estimation (Shell)
-├── 3. REML Analysis (Shell)
-├── 4. Partial Correlation (R)
-├── 5. Selection Analysis (R)
-├── 6. Prediction of Ancestry Effect (R)
-├── 7. Statistical Power calculation (R)
-```
+- 📌 1. Phenotype Processing & Association Analysis (R) 
+- 🧬 2. IBD Estimation (Shell)
+- 🚩 3. REML Analysis (Shell)
+- 📈 4. Partial Correlation (R)
+- 🧬 5. Selection Analysis (R) 
+- 📊 6. Prediction of Ancestry Effect (R) 
+- 🧪 7. Statistical Power calculation (R)
+
 
 ---
 
@@ -39,10 +38,10 @@ This section performs association analyses within the independent subset of the 
 
 **Trait A (Continuous)**  
 - Standardized phenotype  
-- Linear model: `Trait ~ ANCs + covariates`
+- Linear regression
 
 **Trait B (Binary)**  
-- Logistic model: `Trait ~ ANCs + covariates`
+- Logistic regression
 
 ---
 
@@ -57,7 +56,7 @@ Using Mixed model logistic regression — R Code
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-Using **Snipar**  
+Using **snipar**  
 🔗 https://github.com/AlexTISYoung/snipar
 
 - Requires genotype data
@@ -66,7 +65,7 @@ Using **Snipar**
 
 ---
 
-## 3. 📌 REML Analysis using GCTA (Shell)
+## 3. 🚩 REML Analysis using GCTA (Shell)
 
 Using **GCTA**  
 🔗 https://github.com/JianYang-Lab/GCTA
@@ -77,88 +76,68 @@ Performs REML analysis:
 
 ---
 
-## 4. 📌 Partial Correlation Analysis (R)
+## 4. 📈 Partial Correlation (R)
 
 Computes partial correlations:
 - Select variables (e.g., `v1`, `v2`, `v3`, `v4`)  
 - Use `pcor()` from **ppcor**  
 
-Reveals direct variable relationships controlling for other variables.
+This section computes the partial correlation coefficients between variables,
+controlling for the influence of the other variables in the set.
 
 ---
 
 ## 5. 🧬 Selection Analysis (R)
 
-Tests for evidence of selection on trait-associated SNPs.
+This analysis evaluates whether genetic differences in the trait between the two ancestries
+exceed neutral expectations, indicating potential natural selection.
+- Load target and background SNP sets.
+- Bin SNPs by trait-increasing allele frequency and LD score (20×20 bins).
+- For each target SNP, sample matched background SNPs from the same bin.
+- Perform 10,000 permutations to generate a null distribution.
+- Compute Fst and allele-frequency differences for target and matched SNPs.
+- Compare observed values to the null.
 
-Pipeline:
-- Combine target & background SNPs  
-- Bin SNPs by allele frequency + LD (20×20)  
-- Sample matched background SNPs  
-- Run **10,000 permutations**  
-- Compute **Fst** & allele frequency differences  
-- Compare observed vs. null distributions  
-
-📌 Outputs Z-scores + p-values for selection signals.
 
 ---
 
 ## 6. 📊 Prediction of Ancestry Effects (R)
 
-Combines:
-- Within-family (direct)
-- Between-family (indirect)
+This script calculates the expected marginal beta for a phenotype
+using within-family and between-family effects.
 
-Steps:
-- Fit random-intercept model  
-- Extract family/residual variance  
-- Compute shrinkage factor **c**  
-- Predict population-level ancestry effect + SE  
+- Load family data
+- Estimate variance components from a random intercept model
+- Estimated effects from family-based analysis
+- Compute expected marginal beta at population scale
+- Compute standard error of predicted Beta
 
 ---
 
-## 7. 📈 Statistical Power Calculation (R)
+## 7. 🧪 Statistical Power Calculation (R)
 
-Computes power for detecting ancestry effects using sibling pairs.
+Computes statistical power for detecting a within-family ancestry effect
 
 Inputs:
-- Sibling sample size  
-- Phenotypic correlation  
-- Within-family ancestry variance  
-- Effect size (beta)  
-- Alpha  
-
-Power is computed via noncentral chi-square statistics.
-
----
-
-# 🧩 Summary
-
-This repository provides a full genetics workflow including:
-- 🧪 Phenotype processing  
-- 📊 Independent and family-based association models  
-- 🧬 IBD estimation  
-- 📉 REML variance analysis  
-- 🚩 Selection testing  
-- 📈 Ancestry-effect prediction  
-- 🔧 Power evaluation  
-
-Together, these tools help characterize ancestry effects in complex traits using robust statistical genetics methods.
+- Number of sibling pairs  
+- Sibling phenotypic correlation
+- Within-family variance of ancestry proportion
+- Between-ancestry effect
+- Type-I error rate
 
 
 ---
 # 🛠 Software 
 
-- **R **
+- **R**
 - **Shell tools**: [`snipar`](https://github.com/AlexTISYoung/snipar), [`GCTA`](https://cnsgenomics.com/software/gcta/)
 
 ---
-
 # 📜 Citation
 
-If you use this pipeline, please cite the corresponding manuscript (add once available).
-
+If you use this pipeline, please cite our manuscript.
 
 ---
 # ✉️ Contact
 siqi.wang@ndph.ox.ac.uk
+
