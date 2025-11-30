@@ -109,7 +109,7 @@ using within-family and between-family effects.
 - Estimate variance components from a random intercept model
 - Estimated effects from family-based analysis
 - Compute expected marginal beta at population scale
-- Compute standard error of predicted Beta
+- Compute standard error of predicted beta
 
 ---
 
