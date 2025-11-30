@@ -134,7 +134,7 @@ Inputs:
 ---
 # 📜 Citation
 
-If you use this pipeline, please cite our paper.
+If you use this pipeline, please cite our [`paper`](https://www.medrxiv.org/content/10.1101/2025.09.09.25335237v1).
 
 ---
 # ✉️ Contact
