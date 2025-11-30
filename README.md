@@ -22,75 +22,68 @@ It includes phenotype processing, association tests, IBD inference, REML modelin
 
 # 🚀 Pipeline Overview
 
-## 1. Phenotype Processing & Association Analysis (R)
+## 1. 📌 Phenotype Processing & Association Analysis (R)
 
 ### ✔️ 1.0 Standardizing Continuous Traits
 - Split data by sex  
-- Adjust traits for **AGE** and **AGE²**  
+- Adjust traits for **Age** and **Age²**  
 - Standardize residuals (mean = 0, SD = 1)  
 - Remove outliers (±5 SD)  
 - Merge processed sex-specific datasets  
-
-📌 Output: `Filtered_Trait_A` (clean, standardized phenotype)
+- Output: standardized phenotype
 
 ---
 
-### ✔️ 1.1 Independent Population Models
-Models fit on unrelated individuals (`Independent = 1`).
+### ✔️ 1.1 Independent Population Analysis (R)
+This section performs association analyses within the independent subset of the data
 
 **Trait A (Continuous)**  
-- Standardized phenotype `Y_res_S`  
+- Standardized phenotype  
 - Linear model: `Trait ~ ANCs + covariates`
 
 **Trait B (Binary)**  
-- Excludes missing trait values  
 - Logistic model: `Trait ~ ANCs + covariates`
 
 ---
 
-### ✔️ 1.2 Family-Based Mixed Models
-Mixed-effects logistic regression for family data.
+### ✔️ 1.2 Analysis of Binary Trait within Family Data
+Using Mixed model logistic regression — R Code
 
-- Uses `family_set = 1`  
-- Random intercept: **Fam_ID**  
-- Fixed effects: ANCs, family-mean ANCs, age (scaled), age², covariates  
-
-📌 Captures shared family environment + within-family ancestry variation.
+- Using family data 
+- Random intercept for family 
+- Fixed effects for individual-level ANCs, family-mean ANCs, and covariates  
 
 ---
 
-## 2. 🧬 IBD Estimation (Shell)
+## 2. 🧬 Estimation of IBD (Shell)
 
 Using **Snipar**  
 🔗 https://github.com/AlexTISYoung/snipar
 
-- Requires PLINK genotype files per chromosome  
-- Uses KING-identified full-sibling pairs  
+- Requires genotype data
+- Uses KING identified full-sibling pairs  
 - Shell script loops through chromosomes 1–22  
-- Computes chromosome-level IBD matrices  
 
 ---
 
-## 3. 📉 REML Analysis with GCTA (Shell)
+## 3. 📌 REML Analysis using GCTA (Shell)
 
 Using **GCTA**  
 🔗 https://github.com/JianYang-Lab/GCTA
 
-Performs variance-component estimation via REML using:
+Performs REML analysis:
 - Multiple GRMs (`mgrm.txt`)  
 - Phenotype + covariate files  
 
-📌 Outputs variance components & fixed-effect var-cov matrices.
-
 ---
 
-## 4. 🔗 Partial Correlation Analysis (R)
+## 4. 📌 Partial Correlation Analysis (R)
 
 Computes partial correlations:
 - Select variables (e.g., `v1`, `v2`, `v3`, `v4`)  
 - Use `pcor()` from **ppcor**  
 
-📌 Reveals direct variable relationships controlling for other variables.
+Reveals direct variable relationships controlling for other variables.
 
 ---
 
@@ -169,4 +162,3 @@ If you use this pipeline, please cite the corresponding manuscript (add once ava
 ---
 # ✉️ Contact
 siqi.wang@ndph.ox.ac.uk
-
