@@ -2,7 +2,6 @@
 # Within-family effect of ancestry on complex traits in a Mexican population
 
 This repository provides a complete pipeline for analyzing genetype data and phenotype data, focusing on ancestry effects.
-It includes phenotype processing, association tests, IBD inference, REML modeling, selection analysis, ancestry-effect prediction, and power calculations.
 
 ---
 
