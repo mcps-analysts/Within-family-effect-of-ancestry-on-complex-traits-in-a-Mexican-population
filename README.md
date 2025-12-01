@@ -33,7 +33,7 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 ---
 
 ### ✔️ 1.1. Analysis within independent population (R)
-This section performs association analyses within the independent subset of the data
+This section performs association analyses within the independent subset of the data.
 
 **Trait A (Continuous)**  
 - Standardized phenotype  
@@ -45,7 +45,7 @@ This section performs association analyses within the independent subset of the 
 ---
 
 ### ✔️ 1.2 Analysis of Binary Trait within Family Data (R)
-This section performs association analyses within family data by using Mixed model logistic regression
+This section performs association analyses within family data by using Mixed model logistic regression.
 
 - Using family data 
 - Random intercept for family 
@@ -55,7 +55,7 @@ This section performs association analyses within family data by using Mixed mod
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-This section estimate genome-wide identity-by-descent shared between full siblings using **snipar**
+This section estimate genome-wide identity-by-descent shared between full siblings using **snipar**.
 
 🔗 https://github.com/AlexTISYoung/snipar
 
@@ -95,12 +95,13 @@ Compute partial correlations:
 
 This analysis evaluates whether genetic differences in the trait between the two ancestries
 exceed neutral expectations, indicating potential natural selection.
-- Load target and background SNP sets.
-- Bin SNPs by trait-increasing allele frequency and LD score (20×20 bins).
-- For each target SNP, sample matched background SNPs from the same bin.
-- Perform 10,000 permutations to generate a null distribution.
-- Compute Fst and allele-frequency differences for target and matched SNPs.
-- Compare observed values to the null.
+
+- Load target and background SNP sets
+- Bin SNPs by trait-increasing allele frequency and LD score (20×20 bins)
+- For each target SNP, sample matched background SNPs from the same bin
+- Perform 10,000 permutations to generate a null distribution
+- Compute Fst and allele-frequency differences for target and matched SNPs
+- Compare observed values to the null
 
 
 ---
