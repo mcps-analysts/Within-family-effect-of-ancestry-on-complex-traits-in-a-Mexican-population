@@ -78,8 +78,7 @@ This framework enables GCTA to simultaneously estimate ancestry effects and part
 
 ## 4. 📈 Partial Correlation (R)
 
-This section computes the partial correlation coefficients between variables,
-controlling for the influence of the other variables in the set.
+This section computes the partial correlation coefficients between variables, controlling for the influence of the other variables in the set.
 
 Compute partial correlations:
 - Select variables (e.g., `v1`, `v2`, `v3`, `v4`)  
@@ -89,8 +88,7 @@ Compute partial correlations:
 
 ## 5. 🧬 Selection Analysis (R)
 
-This analysis evaluates whether genetic differences in the trait between the two ancestries
-exceed neutral expectations, indicating potential natural selection.
+This analysis evaluates whether genetic differences in the trait between the two ancestries exceed neutral expectations, indicating potential natural selection.
 
 - Load target and background SNP sets
 - Bin SNPs by trait-increasing allele frequency and LD score (20×20 bins)
@@ -104,8 +102,7 @@ exceed neutral expectations, indicating potential natural selection.
 
 ## 6. 📊 Prediction of Ancestry Effects (R)
 
-This script calculates the expected marginal effect size for a phenotype
-using within-family and between-family effects.
+This script calculates the expected marginal effect size for a phenotype using within-family and between-family effects.
 
 - Load family data
 - Estimate variance components from a random intercept model
@@ -117,7 +114,7 @@ using within-family and between-family effects.
 
 ## 7. 🧪 Statistical Power Calculation (R)
 
-This section computes the statistical power to detect a within-family ancestry effect
+This section computes the statistical power to detect a within-family ancestry effect.
 
 Inputs:
 - Number of sibling pairs  
