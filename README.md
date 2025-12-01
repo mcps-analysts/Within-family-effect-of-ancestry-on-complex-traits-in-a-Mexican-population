@@ -45,7 +45,7 @@ This section performs association analyses within the independent subset of the 
 ---
 
 ### ✔️ 1.2 Analysis of Binary Trait within Family Data (R)
-This section performs association analyses within family data by using Mixed model logistic regression.
+This section conducts association analyses on family-based data through mixed-model logistic regression.
 
 - Using family data 
 - Random intercept for family 
@@ -55,7 +55,7 @@ This section performs association analyses within family data by using Mixed mod
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-This section estimate genome-wide identity-by-descent shared between full siblings using [`snipar`](https://github.com/AlexTISYoung/snipar).
+This section estimates genome-wide identity-by-descent shared between full siblings using [`snipar`](https://github.com/AlexTISYoung/snipar).
 
 - Requires genotype data
 - Uses KING identified full-sibling pairs  
@@ -72,7 +72,7 @@ The analysis uses:
 - Phenotype + covariate files  
 
 Genetic covariance between siblings is captured using an IBD relationship matrix, and shared environmental covariance is represented by a family-level matrix.
-This framework allows GCTA to jointly estimate ancestry effects and variance components attributable to genetic, shared environmental, and residual sources of variation.
+This framework enables GCTA to simultaneously estimate ancestry effects and partition phenotypic variance into genetic, shared environmental, and residual components.
 
 ---
 
