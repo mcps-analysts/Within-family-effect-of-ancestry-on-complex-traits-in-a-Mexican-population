@@ -45,7 +45,7 @@ This section performs association analyses within the independent subset of the 
 ---
 
 ### ✔️ 1.2 Analysis of Binary Trait within Family Data (R)
-Using Mixed model logistic regression
+This section performs association analyses within family data by using Mixed model logistic regression
 
 - Using family data 
 - Random intercept for family 
@@ -55,7 +55,7 @@ Using Mixed model logistic regression
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-Using **snipar**  
+This section estimate genome-wide identity-by-descent shared between full siblings using **snipar**
 🔗 https://github.com/AlexTISYoung/snipar
 
 - Requires genotype data
@@ -66,23 +66,28 @@ Using **snipar**
 
 ## 3. 🚩 REML Analysis using GCTA (Shell)
 
+This section conduct REML analysis with GCTA to estimate variance components using multiple GRMs.
+
 Using **GCTA**  
 🔗 https://github.com/JianYang-Lab/GCTA
 
-Perform REML analysis:
-- Multiple GRMs (`mgrm.txt`)  
+The analysis uses:
+- Multiple GRMs listed in (`mgrm.txt`)  
 - Phenotype + covariate files  
+
+Genetic covariance between siblings is captured using an IBD relationship matrix, and shared environmental covariance is represented by a family-level matrix.
+This framework allows GCTA to jointly estimate ancestry effects and variance components attributable to genetic, shared environmental, and residual sources of variation.
 
 ---
 
 ## 4. 📈 Partial Correlation (R)
 
+This section computes the partial correlation coefficients between variables,
+controlling for the influence of the other variables in the set.
+
 Compute partial correlations:
 - Select variables (e.g., `v1`, `v2`, `v3`, `v4`)  
 - Use `pcor()` from **ppcor**  
-
-This section computes the partial correlation coefficients between variables,
-controlling for the influence of the other variables in the set.
 
 ---
 
@@ -115,7 +120,7 @@ using within-family and between-family effects.
 
 ## 7. 🧪 Statistical Power Calculation (R)
 
-Compute the statistical power to detect a within-family ancestry effect
+This section compute the statistical power to detect a within-family ancestry effect
 
 Inputs:
 - Number of sibling pairs  
