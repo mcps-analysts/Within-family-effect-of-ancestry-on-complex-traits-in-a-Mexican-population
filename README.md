@@ -32,7 +32,7 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 
 ---
 
-### ✔️ 1.1. Analysis within independent population (R)
+### ✔️ 1.1. Analyses within independent population (R)
 This section performs association analyses within the independent subset of the data.
 
 **Trait A (Continuous)**  
@@ -45,7 +45,7 @@ This section performs association analyses within the independent subset of the 
 ---
 
 ### ✔️ 1.2 Analysis of Binary Trait within Family Data (R)
-This section conducts association analyses on family-based data through mixed-model logistic regression.
+This section conducts association analysis for a binary trait in family-based data using mixed-model logistic regression.
 
 - Using family data 
 - Random intercept for family 
@@ -55,7 +55,7 @@ This section conducts association analyses on family-based data through mixed-mo
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-This section estimates genome-wide identity-by-descent shared between full siblings using [`snipar`](https://github.com/AlexTISYoung/snipar).
+This section estimates genome-wide identity-by-descent sharing between full siblings using [`snipar`](https://github.com/AlexTISYoung/snipar).
 
 - Requires genotype data
 - Uses KING identified full-sibling pairs  
@@ -63,15 +63,15 @@ This section estimates genome-wide identity-by-descent shared between full sibli
 
 ---
 
-## 3. 🚩 REML Analysis using GCTA (Shell)
+## 3. 🚩 REML Analyses using GCTA (Shell)
 
-This section conduct REML analysis with [`GCTA`](https://cnsgenomics.com/software/gcta/) to estimate variance components using multiple GRMs.
+This section conducts REML analyses with [`GCTA`](https://cnsgenomics.com/software/gcta/) to estimate variance components using multiple GRMs.
 
-The analysis uses:
+The analyses use:
 - Multiple GRMs listed in (`mgrm.txt`)  
-- Phenotype + covariate files  
+- Phenotype and covariate files  
 
-Genetic covariance between siblings is captured using an IBD relationship matrix, and shared environmental covariance is represented by a family-level matrix.
+Genetic covariance between siblings is modeled using an IBD relationship matrix, and shared environmental covariance is represented by a family-level matrix.
 This framework enables GCTA to simultaneously estimate ancestry effects and partition phenotypic variance into genetic, shared environmental, and residual components.
 
 ---
@@ -104,7 +104,7 @@ exceed neutral expectations, indicating potential natural selection.
 
 ## 6. 📊 Prediction of Ancestry Effects (R)
 
-This script calculates the expected marginal beta for a phenotype
+This script calculates the expected marginal effect size for a phenotype
 using within-family and between-family effects.
 
 - Load family data
@@ -117,7 +117,7 @@ using within-family and between-family effects.
 
 ## 7. 🧪 Statistical Power Calculation (R)
 
-This section compute the statistical power to detect a within-family ancestry effect
+This section computes the statistical power to detect a within-family ancestry effect
 
 Inputs:
 - Number of sibling pairs  
