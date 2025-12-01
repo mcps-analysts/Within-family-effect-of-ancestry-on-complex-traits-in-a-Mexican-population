@@ -55,9 +55,7 @@ This section performs association analyses within family data by using Mixed mod
 
 ## 2. 🧬 Estimation of IBD (Shell)
 
-This section estimate genome-wide identity-by-descent shared between full siblings using **snipar**.
-
-🔗 https://github.com/AlexTISYoung/snipar
+This section estimate genome-wide identity-by-descent shared between full siblings using [`snipar`](https://github.com/AlexTISYoung/snipar).
 
 - Requires genotype data
 - Uses KING identified full-sibling pairs  
@@ -67,9 +65,7 @@ This section estimate genome-wide identity-by-descent shared between full siblin
 
 ## 3. 🚩 REML Analysis using GCTA (Shell)
 
-This section conduct REML analysis with **GCTA** to estimate variance components using multiple GRMs.
-
-🔗 https://github.com/JianYang-Lab/GCTA
+This section conduct REML analysis with [`GCTA`](https://cnsgenomics.com/software/gcta/) to estimate variance components using multiple GRMs.
 
 The analysis uses:
 - Multiple GRMs listed in (`mgrm.txt`)  
@@ -135,8 +131,9 @@ Inputs:
 # 🛠 Software 
 
 - **R**
-- **Shell tools**: [`snipar`](https://github.com/AlexTISYoung/snipar), [`GCTA`](https://cnsgenomics.com/software/gcta/)
-
+- **Shell tools**:
+  **snipar**🔗 https://github.com/AlexTISYoung/snipar, 
+  **GCTA**🔗 https://github.com/JianYang-Lab/GCTA
 ---
 # 📜 Citation
 
