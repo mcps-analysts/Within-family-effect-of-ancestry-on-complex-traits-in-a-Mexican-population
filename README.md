@@ -133,7 +133,7 @@ Inputs:
 - **R**
 - **Shell tools**:
   **snipar**🔗 https://github.com/AlexTISYoung/snipar, 
-  **GCTA**🔗 https://github.com/JianYang-Lab/GCTA
+  **GCTA**🔗 https://github.com/JianYang-Lab/GCTA.
 ---
 # 📜 Citation
 
