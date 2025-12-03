@@ -23,12 +23,13 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 ## 1. 📌 Phenotype Processing & Association Analysis (R)
 
 ### ✔️ 1.0 Standardizing Continuous Traits
+
+To get a standardized phenotype
 - Split data by sex  
 - Adjust traits for **age** and **age²**  
 - Standardize residuals (mean = 0, SD = 1)  
 - Remove outliers (±5 SD)  
 - Merge processed sex-specific datasets  
-- Output: standardized phenotype
 
 ---
 
