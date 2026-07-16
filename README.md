@@ -128,7 +128,7 @@ Inputs:
 ---
 # 🛠 Software 
 
-- **R**
+- **R (version 4.3.2)**
 - **Shell tools**:
   **snipar**🔗 https://github.com/AlexTISYoung/snipar, 
   **GCTA**🔗 https://github.com/JianYang-Lab/GCTA.
