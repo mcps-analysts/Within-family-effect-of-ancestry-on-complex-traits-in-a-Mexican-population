@@ -131,7 +131,7 @@ Inputs:
 - **R (version 4.3.2)**
 - **Shell tools**:
   **snipar**🔗 https://github.com/AlexTISYoung/snipar, 
-  **GCTA**(version 1.94.3)🔗 https://github.com/JianYang-Lab/GCTA.
+  **GCTA** (version 1.94.3)🔗 https://github.com/JianYang-Lab/GCTA.
 ---
 # 📜 Citation
 
