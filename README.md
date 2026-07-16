@@ -66,7 +66,7 @@ This section estimates genome-wide identity-by-descent sharing between full sibl
 
 ## 3. 🚩 REML Analyses using GCTA (Shell)
 
-This section conducts REML analyses with [`GCTA`](https://cnsgenomics.com/software/gcta/) (version 1.94.3) to estimate variance components using multiple GRMs.
+This section conducts REML analyses with [`GCTA`](https://cnsgenomics.com/software/gcta/) to estimate variance components using multiple GRMs.
 
 The analyses use:
 - Multiple GRMs listed in (`mgrm.txt`)  
@@ -131,7 +131,7 @@ Inputs:
 - **R (version 4.3.2)**
 - **Shell tools**:
   **snipar**🔗 https://github.com/AlexTISYoung/snipar, 
-  **GCTA**🔗 https://github.com/JianYang-Lab/GCTA.
+  **GCTA**(version 1.94.3)🔗 https://github.com/JianYang-Lab/GCTA.
 ---
 # 📜 Citation
 
