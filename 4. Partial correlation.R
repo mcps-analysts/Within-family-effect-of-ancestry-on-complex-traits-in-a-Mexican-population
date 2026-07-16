@@ -10,7 +10,7 @@ library(haven)
 library(ppcor)
 
 # Load dataset
-df <- read_dta("/dataset.dta")
+df <- read_dta("4.Example_data.dta")
 
 # Select relevant variables for partial correlation analysis
 df <- df[, c("v1", "v2", "v3", "v4")]
