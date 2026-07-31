@@ -15,6 +15,9 @@ library(dplyr)
 
 # Load dataset
 df_all <- read_dta("/ALL_study_population_Pheno.dta")
+df_all <- df_all %>%
+  filter(!is.na(AGE), !is.na(SEX))
+
 df_all$age2<- (df_all$AGE - mean(df_all$AGE))^2
 
 # ----------------------------------------------------------------------------------------
