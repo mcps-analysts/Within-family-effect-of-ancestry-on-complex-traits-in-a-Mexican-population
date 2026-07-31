@@ -33,6 +33,7 @@ fam_data <- df_trait[df_trait$family_set == 1, ]
 fam_data$AGE_scaled  <- scale(fam_data$AGE)
 fam_data$AGE2_scaled <- fam_data$AGE_scaled^2
 
+# Replace ANCs, family_mean_ANCs, and covariates with actual variable names.
 model <- glmer(
   Trait ~ ANCs + family_mean_ANCs + covariates + (1 | Fam_ID),
   data = fam_data,
