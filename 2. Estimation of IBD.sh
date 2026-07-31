@@ -1,7 +1,7 @@
 ########################################################################################################################
 # 2. Estimation of IBD — Shell Script
 ########################################################################################################################
-## This section estimates identity-by-descent (IBD) using the Snipar.
+## This section estimates identity-by-descent (IBD) using Snipar.
 ##
 ## - The script loops over all 22 autosomal chromosomes.
 ## - For each chromosome, it uses PLINK files and KING-identified full sibling pairs.
