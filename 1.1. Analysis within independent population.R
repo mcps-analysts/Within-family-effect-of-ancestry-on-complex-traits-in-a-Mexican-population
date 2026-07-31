@@ -15,7 +15,8 @@
 Independent_Trait_A <- Filtered_Trait_A %>%
   filter(Independent == 1)
 
-# Replace 'Y_res_S' with the standardized trait variable, and add specific covariates
+# Replace 'Y_res_S' with the standardized trait variable
+# Replace ANCs and covariates with the actual variable names used in your dataset.
 M0_Trait_A <- lm(
   Y_res_S ~ ANCs + covariates,
   data = Independent_Trait_A
