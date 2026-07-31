@@ -14,7 +14,8 @@ library(haven)
 library(dplyr)
 
 # Load dataset
-df_all <- read_dta("/ALL_study_population_Pheno.dta")
+df_all <- read_dta("path/to/your/datafile/ALL_study_population_Pheno.dta")
+
 df_all <- df_all %>%
   filter(!is.na(AGE), !is.na(SEX))
 
