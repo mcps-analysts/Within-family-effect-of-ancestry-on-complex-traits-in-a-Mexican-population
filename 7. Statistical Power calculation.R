@@ -21,7 +21,7 @@ power_sibdiff <- function(n, r, VAR_w, beta, alpha) {
   ncp   <- n * VAR_w * beta^2 / (1 - r)
   
   # Statistical power
-  power <-1 - pchisq(thres, 1, ncp = ncp)
+  power <- 1 - pchisq(thres, 1, ncp = ncp)
   
   return(power)
 }
