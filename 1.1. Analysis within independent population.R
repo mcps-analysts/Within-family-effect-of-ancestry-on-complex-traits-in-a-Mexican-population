@@ -28,12 +28,12 @@ summary(M0_Trait_A)
 # ----------------------------------------------------------------------------------------
 # Logistic Regression for Binary Trait B
 # ----------------------------------------------------------------------------------------
-# Replace 'Y' with the binary trait variable, and adjust covariates accordingly
+# Replace 'Trait_B' with the binary trait variable, and adjust covariates accordingly
 Filtered_Trait_B <- df_all[complete.cases(df_all$Trait_B), ] 
 Independent_Trait_B <- Filtered_Trait_B[Filtered_Trait_B$Independent == 1, ] 
 
 M1_Trait_B <- glm(
-  Y ~ ANCs + covariates,
+  Trait_B ~ ANCs + covariates,
   data = Independent_Trait_B,
   family = binomial
 )
