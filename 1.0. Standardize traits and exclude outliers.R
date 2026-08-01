@@ -19,7 +19,7 @@ df_all <- read_dta("path/to/your/datafile/ALL_study_population_Pheno.dta")
 df_all <- df_all %>%
   filter(!is.na(AGE), !is.na(SEX))
 
-df_all$age2<- (df_all$AGE - mean(df_all$AGE))^2
+df_all$age2 <- (df_all$AGE - mean(df_all$AGE))^2
 
 # ----------------------------------------------------------------------------------------
 # Separate Female (SEX == 0) and Male (SEX == 1) Data
