@@ -23,6 +23,7 @@ df2 <- read.csv("Trait_A_background_snps.csv") # background SNPs
 df1$set <- "target"
 df2$set <- "background"
 
+# df1 and df2 should have identical columns before rbind()
 df_all <- rbind(df1, df2) %>%
   rename(fTIA_ANC2 = ANC2_freq_risk_allele,
          fTIA_ANC1 = ANC1_freq_risk_allele)
