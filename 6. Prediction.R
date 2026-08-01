@@ -41,8 +41,8 @@ c_factor <- (n + lambda) / (n * (1 + lambda))
 # ------------------------------------------------------------------------------
 #  Estimated Effects from Family-Based analysis (replace with actual values)
 # -------------------------------------------------------------------------------
-beta_within <- actual_values   
-beta_between <- actual_values  
+beta_within <- actual_values   # replace with actual values
+beta_between <- actual_values  # replace with actual values
   
 # ------------------------------------------------------------------------------
 #  Compute Expected Marginal Beta at Population Scale
@@ -52,9 +52,9 @@ expected_beta <- beta_within + c_factor * beta_between
 # ------------------------------------------------------------------------------
 #  Compute Standard Error of Predicted Beta
 # ------------------------------------------------------------------------------
-se_within <- actual_values_SE_within_family_effect
-se_between <- actual_values_SE_between_family_effect
-cov_bw <- actual_values_covariance_between_within_and_between
+se_within <- actual_values_SE_within_family_effect             # replace with actual values
+se_between <- actual_values_SE_between_family_effect           # replace with actual values
+cov_bw <- actual_values_covariance_between_within_and_between  # replace with actual values
   
 SE_expected_beta <- sqrt(se_within^2 + c_factor^2 * se_between^2 + 2 * c_factor * cov_bw)
 
