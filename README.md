@@ -1,7 +1,7 @@
 
 # Within-family effect of ancestry on complex traits in a Mexican population
 
-This repository provides a complete pipeline for analyzing genetype data and phenotype data, focusing on ancestry effects.
+This repository provides a complete pipeline for analyzing genotype data and phenotype data, focusing on ancestry effects.
 
 ---
 
@@ -13,7 +13,7 @@ This repository provides a complete pipeline for analyzing genetype data and phe
 - 📈 4. Partial Correlation (R)
 - 🧬 5. Selection Analysis (R) 
 - 📊 6. Prediction of Ancestry Effect (R) 
-- 🧪 7. Statistical Power calculation (R)
+- 🧪 7. Statistical Power Calculation (R)
 
 
 ---
