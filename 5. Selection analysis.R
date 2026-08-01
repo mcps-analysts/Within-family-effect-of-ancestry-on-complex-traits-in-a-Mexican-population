@@ -124,9 +124,9 @@ perm_mean_fsts <- all_matched_snps %>%
   group_by(sample_id) %>%
   summarise(mean_fst = mean(fst, na.rm = TRUE), .groups = "drop")
 
-null_mean_fst <- mean(perm_mean_fsts$mean_fst)
+null_mean_fst <- mean(perm_mean_fsts$mean_fst, na.rm = TRUE)
 
-null_sd_fst <- sd(perm_mean_fsts$mean_fst)
+null_sd_fst <- sd(perm_mean_fsts$mean_fst, na.rm = TRUE)
 z_fst <- (obs_mean_fst - null_mean_fst) / null_sd_fst
 p_norm_fst <- 2 * pnorm(-abs(z_fst))
 
@@ -142,8 +142,8 @@ perm_mean_diffs <- all_matched_snps %>%
   group_by(sample_id) %>%
   summarise(mean_diff = mean(freq_diff, na.rm = TRUE), .groups = "drop")
 
-null_mean_diff <- mean(perm_mean_diffs$mean_diff)
-null_sd_diff <- sd(perm_mean_diffs$mean_diff)
+null_mean_diff <- mean(perm_mean_diffs$mean_diff, na.rm = TRUE)
+null_sd_diff <- sd(perm_mean_diffs$mean_diff, na.rm = TRUE)
 z_diff <- (obs_mean_diff - null_mean_diff) / null_sd_diff
 p_norm_diff <- 2 * pnorm(-abs(z_diff))
 
