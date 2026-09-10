@@ -135,7 +135,7 @@ Inputs:
 ---
 # 📜 Citation
 
-If you use this pipeline, please cite our [`paper`](https://doi.org/10.1038/s41586-026-11039-9).
+If you use this pipeline, please cite our paper.
 Wang, S., Berumen, J., Vergara-Lope, A. et al. Within-family effect of ancestry on complex traits in a Mexican population. Nature (2026). https://doi.org/10.1038/s41586-026-11039-9
 
 ---
